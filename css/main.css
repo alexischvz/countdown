@@ -1,0 +1,179 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: coral;
+    position: sticky;
+    top: 0;
+    padding: .5rem;
+    text-align: center;
+    color: white;
+}
+
+.formulario{
+    max-width: 700px;
+    background-color: floralwhite;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: .5rem;
+}
+
+#form-countdown > *{
+    width: 100%;
+    display: block;
+    margin: .5rem 0;
+}
+
+#form-countdown input{
+    padding: .5rem;
+    outline: none;
+}
+
+#form-countdown input[type="submit"]{
+    width: 25%;
+    margin: 0 auto;
+    border: 2px solid #2c8b1f;
+    outline: none;
+    background-color: transparent;
+    color: #2c8b1f;
+    transition: .3s ease;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#form-countdown input[type="submit"]:hover{
+    background-color: rgba(44, 149, 44, 0.83);
+    cursor: pointer;
+    color: white;
+}
+
+
+.caja{
+    max-width: 700px;
+    min-height: 200px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px;
+    transition: .5s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.caja .header-box{
+    background-color: #61ad57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja .countdown{
+    background-color: #44763e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.caja .footer-box{
+    background-color: #59a24f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja .footer-box button{
+    padding: .5rem 1.5rem;
+    background-color: #e65050;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+.caja .footer-box button:hover{
+    background-color: #b44242;
+    cursor: pointer;
+}
+
+.is-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 725px){
+    .formulario{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    
+    .caja{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    
+    .caja .countdown{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
