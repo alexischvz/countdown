@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Countdown</title>
+</head>
+<body>
+   
+   <header>
+       <h2>Countdown</h2>
+   </header>
+   
+   <section>
+       <div class="formulario">
+          
+          <form id="form-countdown">
+              <input type="datetime-local" id="fecha" name="fecha" placeholder="Escribe una fecha" required>
+              <input type="text" id="mensaje" name="mensaje" placeholder="Escribe un mensaje" required>
+              
+              <input type="submit" name="iniciar" id="iniciar" value="Iniciar">
+          </form>
+           
+       </div>
+       
+       <div class="caja">
+           <div class="header-box"></div>
+           <div class="countdown"></div>
+           <div class="footer-box">
+               <button id="cancel" name="cancel">Cancelar</button>
+           </div>
+       </div>
+       
+   </section>
+   
+   <script src="js/app.js" type="module"></script>
+    
+</body>
+</html>
